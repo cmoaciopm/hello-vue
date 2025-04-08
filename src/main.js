@@ -8,6 +8,7 @@ import HelloWorld from './components/basic/HelloWorld.vue'
 import HandlingUserInput from './components/basic/HandlingUserInput.vue'
 import AttributeBindings from './components/basic/AttributeBindings.vue'
 import ConditionalAndLoops from "./components/basic/ConditionalAndLoops.vue"
+import FormBindings from './components/basic/FormBindings.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -16,6 +17,7 @@ const routes = [
   { path: '/basic/handling_user_input', component: HandlingUserInput },
   { path: '/basic/attribute_bindings', component: AttributeBindings},
   { path: '/basic/conditional_and_loops', component: ConditionalAndLoops},
+  { path: '/basic/form_bindings', component: FormBindings },
 ]
   
 const router = createRouter({
