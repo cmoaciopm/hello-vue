@@ -4,6 +4,6 @@
     <RouterLink to="/basic/attribute_bindings">Attribute Bindings</RouterLink>
     <RouterLink to="/basic/conditional_and_loops">Conditional and Loops</RouterLink>
     <RouterLink to="/basic/form_bindings">Form Bindings</RouterLink>
-
+    <RouterLink to="/basic/simple_component">Simple Component</RouterLink>
     <RouterView/>
 </template>
