@@ -15,6 +15,7 @@ import SimpleComponent from './components/basic/SimpleComponent.vue'
 
 import TemplateSyntax from './components/essentials/TemplateSyntax.vue'
 import ReactivityFundamentals from './components/essentials/ReactivityFundamentals.vue'
+import ComputedProperties from './components/essentials/ComputedProperties.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -30,6 +31,7 @@ const routes = [
 
   { path: '/essentials/template_syntax', component: TemplateSyntax},
   { path: '/essentials/reactivity_fundamentals', component: ReactivityFundamentals},
+  { path: '/essentials/computed_properties', component: ComputedProperties},
 ]
   
 const router = createRouter({
