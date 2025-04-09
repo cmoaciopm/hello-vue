@@ -14,6 +14,7 @@ import FormBindings from './components/basic/FormBindings.vue'
 import SimpleComponent from './components/basic/SimpleComponent.vue'
 
 import TemplateSyntax from './components/essentials/TemplateSyntax.vue'
+import ReactivityFundamentals from './components/essentials/ReactivityFundamentals.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -28,6 +29,7 @@ const routes = [
   { path: '/basic/simple_component', component: SimpleComponent },
 
   { path: '/essentials/template_syntax', component: TemplateSyntax},
+  { path: '/essentials/reactivity_fundamentals', component: ReactivityFundamentals},
 ]
   
 const router = createRouter({
