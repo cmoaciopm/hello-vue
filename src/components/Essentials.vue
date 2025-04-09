@@ -3,5 +3,7 @@
     <RouterLink to="/essentials/reactivity_fundamentals">Reactivity Fundamentals</RouterLink>
     <RouterLink to="/essentials/computed_properties">Computed Properties</RouterLink>
     <RouterLink to="/essentials/class_and_style_bindings">Class and Style Bindings</RouterLink>
+    <RouterLink to="/essentials/conditional_rendering">Conditional Rendering</RouterLink>
+
     <RouterView/>
 </template>

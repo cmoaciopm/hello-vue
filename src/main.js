@@ -17,7 +17,7 @@ import TemplateSyntax from './components/essentials/TemplateSyntax.vue'
 import ReactivityFundamentals from './components/essentials/ReactivityFundamentals.vue'
 import ComputedProperties from './components/essentials/ComputedProperties.vue'
 import ClassAndStyleBindings from './components/essentials/ClassAndStyleBindings.vue'
-
+import ConditionalRendering from './components/essentials/ConditionalRendering.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -35,6 +35,7 @@ const routes = [
   { path: '/essentials/reactivity_fundamentals', component: ReactivityFundamentals},
   { path: '/essentials/computed_properties', component: ComputedProperties},
   { path: '/essentials/class_and_style_bindings', component: ClassAndStyleBindings},
+  { path: '/essentials/conditional_rendering', component: ConditionalRendering},
 ]
   
 const router = createRouter({
