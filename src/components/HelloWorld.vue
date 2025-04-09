@@ -19,6 +19,7 @@ defineProps({
     </h3>
     <nav>
       <RouterLink to="/basic">Basic examples</RouterLink>
+      <RouterLink to="/essentials">Essentials</RouterLink>
       <RouterLink to="/practical">Practical examples</RouterLink>
     </nav>
     <main>
