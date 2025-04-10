@@ -18,6 +18,7 @@ import ReactivityFundamentals from './components/essentials/ReactivityFundamenta
 import ComputedProperties from './components/essentials/ComputedProperties.vue'
 import ClassAndStyleBindings from './components/essentials/ClassAndStyleBindings.vue'
 import ConditionalRendering from './components/essentials/ConditionalRendering.vue'
+import ListRendering from './components/essentials/ListRendering.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -36,6 +37,7 @@ const routes = [
   { path: '/essentials/computed_properties', component: ComputedProperties},
   { path: '/essentials/class_and_style_bindings', component: ClassAndStyleBindings},
   { path: '/essentials/conditional_rendering', component: ConditionalRendering},
+  { path: '/essentials/list_rendering', component: ListRendering},
 ]
   
 const router = createRouter({
