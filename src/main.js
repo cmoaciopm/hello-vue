@@ -19,6 +19,7 @@ import ComputedProperties from './components/essentials/ComputedProperties.vue'
 import ClassAndStyleBindings from './components/essentials/ClassAndStyleBindings.vue'
 import ConditionalRendering from './components/essentials/ConditionalRendering.vue'
 import ListRendering from './components/essentials/ListRendering.vue'
+import EventHandling from './components/essentials/EventHandling.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -38,6 +39,7 @@ const routes = [
   { path: '/essentials/class_and_style_bindings', component: ClassAndStyleBindings},
   { path: '/essentials/conditional_rendering', component: ConditionalRendering},
   { path: '/essentials/list_rendering', component: ListRendering},
+  { path: '/essentials/event_handling', component: EventHandling},
 ]
   
 const router = createRouter({
