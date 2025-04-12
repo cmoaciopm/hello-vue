@@ -6,5 +6,6 @@
     <RouterLink to="/essentials/conditional_rendering">Conditional Rendering</RouterLink>
     <RouterLink to="/essentials/list_rendering">List Rendering</RouterLink>
     <RouterLink to="/essentials/event_handling">Event Handling</RouterLink>
+    <RouterLink to="/essentials/form_input_bindings">Form Input Bindings</RouterLink>
     <RouterView/>
 </template>
