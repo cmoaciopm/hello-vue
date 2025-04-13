@@ -21,6 +21,7 @@ import ConditionalRendering from './components/essentials/ConditionalRendering.v
 import ListRendering from './components/essentials/ListRendering.vue'
 import EventHandling from './components/essentials/EventHandling.vue'
 import FormInputBindings from './components/essentials/FormInputBindings.vue'
+import Watchers from './components/essentials/Watchers.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -42,6 +43,7 @@ const routes = [
   { path: '/essentials/list_rendering', component: ListRendering},
   { path: '/essentials/event_handling', component: EventHandling},
   { path: '/essentials/form_input_bindings', component: FormInputBindings},
+  { path: '/essentials/watchers', component: Watchers},
 ]
   
 const router = createRouter({
