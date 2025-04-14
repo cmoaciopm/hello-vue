@@ -23,6 +23,7 @@ import EventHandling from './components/essentials/EventHandling.vue'
 import FormInputBindings from './components/essentials/FormInputBindings.vue'
 import Watchers from './components/essentials/Watchers.vue'
 import TemplateRefs from './components/essentials/TemplateRefs.vue'
+import ComponentsBasics from './components/essentials/ComponentsBasics.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -46,6 +47,7 @@ const routes = [
   { path: '/essentials/form_input_bindings', component: FormInputBindings},
   { path: '/essentials/watchers', component: Watchers},
   { path: '/essentials/template_refs', component: TemplateRefs},
+  { path: '/essentials/components_basics', component: ComponentsBasics},
 ]
   
 const router = createRouter({
