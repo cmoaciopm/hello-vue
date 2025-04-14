@@ -8,5 +8,6 @@
     <RouterLink to="/essentials/event_handling">Event Handling</RouterLink>
     <RouterLink to="/essentials/form_input_bindings">Form Input Bindings</RouterLink>
     <RouterLink to="/essentials/watchers">Watchers</RouterLink>
+    <RouterLink to="/essentials/template_refs">Template Refs</RouterLink>
     <RouterView/>
 </template>
