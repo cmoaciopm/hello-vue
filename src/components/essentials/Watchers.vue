@@ -1,6 +1,7 @@
 <script setup>
-import { watchEffect } from 'vue';
+import { watchEffect } from 'vue'
 import {ref, watch, reactive } from 'vue'
+import { onWatcherCleanup } from 'vue'
 
 const question = ref('')
 const answer = ref('Questions usually contain a question mark. ;-)')
@@ -150,6 +151,52 @@ watchEffect(async () => {
     const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${todoId.value}`)
     data.value = await response.json()
 })
+
+// Demonstrate the side effect cleanup for sync callback
+const anotherTodoId = ref(1)
+watch(
+    anotherTodoId,
+    (newTodoId, oldTodoId) => {
+        const controller = new AbortController()
+        console.log(`Fetching data for todoId ${newTodoId}`)
+        fetch(
+            `https://jsonplaceholder.typicode.com/todos/${newTodoId}`,
+            { signal: controller.signal }
+        ).then(() => {
+            console.log(`Data is fetched. Now the todoId is ${anotherTodoId.value}`)
+        })
+        onWatcherCleanup(() => {
+            console.log(`onWatcherCleanup is invoked. Now the new todoId is ${newTodoId}`)
+            controller.abort('Cancel stale request.')
+        })
+    }
+)
+function increaseAnotherTodoId() {
+    anotherTodoId.value++
+}
+
+// Demonstrate the side effect cleanup for async callback
+const yetAnotherTodoId = ref(1)
+watch(
+    yetAnotherTodoId,
+    async (newTodoId, oldTodoId, onCleanup) => {
+        const controller = new AbortController()
+        console.log(`Fetching data for todoId ${newTodoId}`)
+        fetch(
+            `https://jsonplaceholder.typicode.com/todos/${newTodoId}`,
+            { signal: controller.signal }
+        ).then(() => {
+            console.log(`Data is fetched. Now the todoId is ${yetAnotherTodoId.value}`)
+        })
+        onCleanup(() => {
+            console.log(`onCleanup is invoked. Now the new todoId is ${newTodoId}`)
+            controller.abort('Cancel stale request.')
+        })
+    }
+)
+function increaseYetAnotherTodoId() {
+    yetAnotherTodoId.value++
+}
 </script>
 
 <template>
@@ -194,4 +241,10 @@ watchEffect(async () => {
         <button @click="resetData">Reset the data</button>
         <button @click="increaseAnotherReactiveVariable">Increase another reactive variable</button>
     </p>
+
+    <hr>
+    <button @click="increaseAnotherTodoId">Increase another todo ID</button>
+
+    <hr>
+    <button @click="increaseYetAnotherTodoId">Increase yet another todo ID</button>
 </template>
