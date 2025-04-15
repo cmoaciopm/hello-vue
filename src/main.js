@@ -4,6 +4,8 @@ import { createApp } from 'vue'
 import App from './App.vue'
 import BasicExamples from './components/BasicExamples.vue'
 import Essentials from './components/Essentials.vue'
+import PracticalExamples from './components/PracticalExamples.vue'
+
 import { createRouter, createMemoryHistory } from 'vue-router'
 
 import HelloWorld from './components/basic/HelloWorld.vue'
@@ -25,9 +27,11 @@ import Watchers from './components/essentials/Watchers.vue'
 import TemplateRefs from './components/essentials/TemplateRefs.vue'
 import ComponentsBasics from './components/essentials/ComponentsBasics.vue'
 
+import MarkdownEditor from './components/practical/MarkdownEditor.vue'
+
 const routes = [
   { path: '/basic', component: BasicExamples },
-  { path: '/practical', component: BasicExamples },
+  { path: '/practical', component: PracticalExamples },
   { path: '/essentials', component: Essentials },
 
   { path: '/basic/hello_world', component: HelloWorld },
@@ -48,6 +52,8 @@ const routes = [
   { path: '/essentials/watchers', component: Watchers},
   { path: '/essentials/template_refs', component: TemplateRefs},
   { path: '/essentials/components_basics', component: ComponentsBasics},
+
+  { path: '/practical/markdown_editor', component: MarkdownEditor},
 ]
   
 const router = createRouter({
