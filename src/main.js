@@ -30,6 +30,7 @@ import ComponentsBasics from './components/essentials/ComponentsBasics.vue'
 import MarkdownEditor from './components/practical/MarkdownEditor.vue'
 import FetchingData from './components/practical/FetchingData.vue'
 import GridWithSortAndFilter from './components/practical/GridWithSortAndFilter.vue'
+import TreeView from './components/practical/TreeView.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -58,6 +59,7 @@ const routes = [
   { path: '/practical/markdown_editor', component: MarkdownEditor},
   { path: '/practical/fetching_data', component: FetchingData},
   { path: '/practical/grid_with_sort_and_filter', component: GridWithSortAndFilter},
+  { path: '/practical/tree_view', component: TreeView },
 ]
   
 const router = createRouter({
