@@ -28,6 +28,7 @@ import TemplateRefs from './components/essentials/TemplateRefs.vue'
 import ComponentsBasics from './components/essentials/ComponentsBasics.vue'
 
 import MarkdownEditor from './components/practical/MarkdownEditor.vue'
+import FetchingData from './components/practical/FetchingData.vue'
 
 const routes = [
   { path: '/basic', component: BasicExamples },
@@ -54,6 +55,7 @@ const routes = [
   { path: '/essentials/components_basics', component: ComponentsBasics},
 
   { path: '/practical/markdown_editor', component: MarkdownEditor},
+  { path: '/practical/fetching_data', component: FetchingData},
 ]
   
 const router = createRouter({
